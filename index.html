@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AMBU</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: url('prueba.webp') no-repeat center center fixed;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      color: white;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-shadow: 2px 2px 4px #000;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+      font-size: 3em;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 15px 25px;
+      border-radius: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.2em;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover, nav a.active {
+      color: #00ffff;
+    }
+
+    audio {
+      display: none; /* Oculta el reproductor */
+    }
+  </style>
+</head>
+<body>
+  <h1>AMBU_POLUX</h1>
+  <nav>
+    <a href="#" class="active">Inicio</a>
+    <a href="https://discord.gg/puzsf4UFCS" target="_blank">Discord</a>
+    <a href="https://www.twitch.tv/ambu_x" target="_blank">Twitch</a>
+    <a href="https://kick.com/ambupolux" target="_blank">Kick</a>
+    <a href="https://steamcommunity.com/profiles/76561199112626182/" target="_blank">Steam</a>
+  </nav>
+
+  <!-- Reproductor de audio -->
+  <audio autoplay loop>
+    <source src="RUN BABY RUN.mp3" type="audio/mpeg">
+    Tu navegador no soporta el audio.
+  </audio>
+</body>
+</html>
